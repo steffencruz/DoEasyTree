@@ -16,11 +16,15 @@ The output 'Easy' trees can be further analyzed using the TTigressAnalysis, Make
 
 grsisort -l
 TChain *chain = new TChain("EasyTree")
+
 chain->Add("easy*.root")
+
 chain->Draw("exc:eadd>h(4000,0,4000,1000,-2000,8000)","type
 
 
 #Notes
   -Requires TSharcAnalysis to run. 
+
   -Sharc timing is not included (was not working when this code was produced). To include, just add another branch into the trees e.g. sharctime.
+  
   -Trifoil is also not included, but can easily be added.
