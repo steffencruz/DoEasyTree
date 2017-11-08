@@ -1,0 +1,32 @@
+Sr94{
+
+	TreeName:       easy 
+
+  ChainData:      $SR94DIR/analysis*.root
+	Nentries:       0
+  
+  A:              94
+	EperU:          5.47
+	
+  BadStripsFile:  /home/S1389/packages/SharcAnalysis/BadStrips_sr94.txt 
+  TargetThick:    5 // mg/cm2 
+  Offset:         0 0 0.0 // no offset
+	TargetMat:      cd2 
+  
+  CalFile:        /data2/tigress/S1389Work/Data/2013/S1389_2013.cal 
+  PiecewiseCal:   0                // use second coefficients immediately 
+
+  DBOX_coeffs:   0 1
+	UBOX_coeffs:   0 1
+	UQQQ_coeffs:   0 1   
+  Pad5_coeffs1:  -178.21  2.94
+  Pad5_coeffs2:  -178.21  2.94   
+  Pad6_coeffs:   0  1
+  Pad7_coeffs:   -226.25  2.97  
+  Pad8_coeffs:   -128.79  2.99
+  
+  ECut:           500
+  CutFile:        /home/S1389/Programs/DoEasyTree/2013/cutfile_2013.root    
+  
+  AddMultiMax:    10
+}
